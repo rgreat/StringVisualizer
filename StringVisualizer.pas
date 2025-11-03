@@ -203,7 +203,7 @@ begin
   CharText:='';
   if Len=-1 then Len:=Length(Text);
 
-
+  QStart:=0;
   for i:=1 to Length(Text) do begin
     if (CharMode>0) and ((CharInSet(Text[i],['''','#']) and not b) or (i=Length(Text))) then begin
       CharMode:=0;
